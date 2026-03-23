@@ -1,0 +1,220 @@
+.reviewEditor {
+  min-height: 200px;
+}
+
+.addButton {
+  width: 100%;
+  padding: 16px;
+  background: var(--color-background);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  opacity: 0.7;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.addButton:hover {
+  border-color: var(--color-primary);
+  opacity: 1;
+}
+
+.editorContainer {
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.metaFields {
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.fieldRow {
+  display: flex;
+  gap: 20px;
+}
+
+.fieldRow .field {
+  flex: 1;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: var(--color-border);
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: #F39C12;
+}
+
+.star.interactive {
+  cursor: pointer;
+}
+
+.star.interactive:hover {
+  transform: scale(1.1);
+}
+
+.dateInput {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  width: 100%;
+  background: var(--color-white);
+}
+
+.editorWrapper {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.editorWrapper :global(.ql-container) {
+  min-height: 200px;
+  font-size: 1rem;
+  font-family: var(--font-ui);
+}
+
+.editorWrapper :global(.ql-toolbar) {
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-light-gray);
+}
+
+.editorWrapper :global(.ql-container) {
+  border: none;
+}
+
+.editorActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancelButton {
+  padding: 10px 20px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.cancelButton:hover {
+  background: var(--color-light-gray);
+}
+
+.saveButton {
+  padding: 10px 20px;
+  background: var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.saveButton:hover {
+  background: #34495E;
+}
+
+.reviewContent {
+  padding: 0;
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.readingDates {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  opacity: 0.6;
+}
+
+.content {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.content :global(h1),
+.content :global(h2),
+.content :global(h3) {
+  margin: 12px 0 8px;
+  color: var(--color-text);
+}
+
+.content :global(p) {
+  margin-bottom: 8px;
+}
+
+.content :global(ul),
+.content :global(ol) {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.reviewActions {
+  display: flex;
+  gap: 12px;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+
+.editBtn {
+  background: none;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.editBtn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.deleteBtn {
+  background: none;
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+}
+
+.deleteBtn:hover {
+  background: var(--color-error);
+  color: var(--color-white);
+}
