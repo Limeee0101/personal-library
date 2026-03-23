@@ -9,7 +9,11 @@ const PORT = process.env.PORT || 3001;
 
 // CORS配置
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: [
+    'http://localhost:3000',
+    'https://personal-library-amber.vercel.app',
+    /\.vercel\.app$/
+  ],
   credentials: true
 };
 
